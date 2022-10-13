@@ -1,3 +1,5 @@
+$background : linear-gradient(354deg, rgba(147,86,220,1) 8%, rgba(179,97,219,1) 30%, rgba(255,121,218,1) 100%);
+
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
@@ -6,10 +8,86 @@ body {
         padding: 1.5rem;
         padding-bottom: 0.5rem;
         text-align: center;
-        box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+        box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+        position: relative;
 
         img {
             width: 200px;
+        }
+    }
+
+    nav {
+        text-align: center;
+
+        form {
+            padding: 1.1rem;
+            background-color: #ebebebad;
+            font-size: 1.1rem;
+
+            input {
+                width: 10rem;
+                border: none;
+                background-color: transparent;
+                font-weight: bold;
+                font-size: 1rem;
+                padding-left: 10px;
+            }
+        }
+
+        .exploreRestaurants {
+            background-color: #edebeb55;
+            padding: 20px;
+
+            button {
+                background: $background;
+                box-shadow: 0.20rem 0.20rem 0.5rem rgb(0 0 0 / 20%);
+                color: white;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    .proceeding {
+        padding: 2rem 1rem;
+
+        ol {
+            .step3{
+                background-color: #9256dc1a;
+            }
+
+            li {
+                display: flex;
+                padding: 0.5rem;
+                padding-left: 1.5rem;
+                margin-bottom: 20px;
+                margin-left: -30px;
+                border-radius: 1.25rem;
+                box-shadow: 0.20rem 0.20rem 0.5rem rgb(0 0 0 / 10%);
+
+                .number {
+                    background: #9356dc;
+                    color: white;
+                    border-radius: 50px;
+                    padding-top: 3px;
+                    width: 1.50rem;
+                    height: 1.35rem;
+                    text-align: center;
+                    position: absolute;
+                    margin-top: 10px;
+                    margin-left: -35px;
+                }
+
+                .fa-solid {
+                    padding-top: 15px;
+                    padding-right: 13px;
+                }
+
+                .fa-store {
+                    color: #9356dc;
+                }
+            }
         }
     }
 }

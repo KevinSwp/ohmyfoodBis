@@ -6,8 +6,71 @@ body header {
   padding: 1.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 body header img {
   width: 200px;
+}
+body nav {
+  text-align: center;
+}
+body nav form {
+  padding: 1.1rem;
+  background-color: rgba(235, 235, 235, 0.6784313725);
+  font-size: 1.1rem;
+}
+body nav form input {
+  width: 10rem;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+body nav .exploreRestaurants {
+  background-color: rgba(237, 235, 235, 0.3333333333);
+  padding: 20px;
+}
+body nav .exploreRestaurants button {
+  background: linear-gradient(354deg, rgb(147, 86, 220) 8%, rgb(179, 97, 219) 30%, rgb(255, 121, 218) 100%);
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+}
+body .proceeding {
+  padding: 2rem 1rem;
+}
+body .proceeding ol .step3 {
+  background-color: rgba(146, 86, 220, 0.1019607843);
+}
+body .proceeding ol li {
+  display: flex;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 20px;
+  margin-left: -30px;
+  border-radius: 1.25rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+body .proceeding ol li .number {
+  background: #9356dc;
+  color: white;
+  border-radius: 50px;
+  padding-top: 3px;
+  width: 1.5rem;
+  height: 1.35rem;
+  text-align: center;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -35px;
+}
+body .proceeding ol li .fa-solid {
+  padding-top: 15px;
+  padding-right: 13px;
+}
+body .proceeding ol li .fa-store {
+  color: #9356dc;
 }/*# sourceMappingURL=style.css.map */
