@@ -128,8 +128,10 @@ body .restaurants ul {
   padding-left: 0;
 }
 body .restaurants ul li figure {
+  position: relative;
   border-radius: 1rem;
   background-color: white;
+  margin: 1rem 0;
 }
 body .restaurants ul li figure img {
   width: 100%;
@@ -141,6 +143,8 @@ body .restaurants ul li figure img {
 body .restaurants ul li figure figcaption {
   display: flex;
   padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
 }
 body .restaurants ul li figure figcaption .heart {
   font-size: 1.5rem;
@@ -157,7 +161,7 @@ body .restaurants ul li figure figcaption .heart:hover .bi-heart-fill {
 }
 body .restaurants ul li figure .entitled h2 {
   font-size: 1.2rem;
-  margin-bottom: -10px;
+  margin: 0.5rem 0 -0.5rem;
 }
 body .restaurants ul li figure .entitled p {
   font-size: 1.1rem;
@@ -166,7 +170,8 @@ body .restaurants ul li figure .label {
   position: absolute;
   border-radius: 0.15rem;
   padding: 0.4rem 0.7rem;
-  margin-top: -190px;
+  top: 0.2rem;
+  right: 1rem;
   background-color: #99e2d0;
   color: #368e6c;
   font-weight: bold;

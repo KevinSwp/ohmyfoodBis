@@ -153,8 +153,10 @@ body {
             li {
 
                 figure {
+                    position: relative;
                     border-radius: 1rem;
                     background-color: white;
+                    margin: 1rem 0;
 
                     img {
                         width: 100%;
@@ -166,6 +168,8 @@ body {
                     figcaption {
                         display: flex;
                         padding: 0 1rem;
+                        align-items: center;
+                        justify-content: space-between;
                         
                         .heart {
                             font-size: 1.5rem;
@@ -187,7 +191,7 @@ body {
                     .entitled {
                         h2 {
                             font-size: 1.2rem;
-                            margin-bottom: -10px;
+                            margin: 0.5rem 0 -0.5rem;
                         }
 
                         p{
@@ -199,7 +203,9 @@ body {
                         position: absolute;
                         border-radius: 0.15rem;
                         padding: 0.4rem 0.7rem;
-                        margin-top: -190px;
+                        // margin-top: -190px;
+                        top: 0.2rem;
+                        right: 1rem;
                         background-color: #99e2d0;
                         color: #368e6c;
                         font-weight: bold;
