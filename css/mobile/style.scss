@@ -175,7 +175,7 @@ body {
                             font-size: 1.5rem;
                             //switch heart on hover
                             &:hover .bi-heart,
-                            & .bi-heart-fill{
+                            .bi-heart-fill{
                                 display: none;
                             }
                             &:hover .bi-heart-fill{
@@ -183,6 +183,15 @@ body {
                                 color: transparent;
                                 background: $background;
                                 background-clip: text;
+                            }
+
+                            .bi-heart-fill{
+                                opacity: 0.3;
+                                transition: 0.6s;
+
+                                &:hover {
+                                    opacity: 1;
+                                }
                             }
                         }
                         

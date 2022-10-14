@@ -149,7 +149,8 @@ body .restaurants ul li figure figcaption {
 body .restaurants ul li figure figcaption .heart {
   font-size: 1.5rem;
 }
-body .restaurants ul li figure figcaption .heart:hover .bi-heart, body .restaurants ul li figure figcaption .heart .bi-heart-fill {
+body .restaurants ul li figure figcaption .heart:hover .bi-heart,
+body .restaurants ul li figure figcaption .heart .bi-heart-fill {
   display: none;
 }
 body .restaurants ul li figure figcaption .heart:hover .bi-heart-fill {
@@ -158,6 +159,13 @@ body .restaurants ul li figure figcaption .heart:hover .bi-heart-fill {
   background: linear-gradient(354deg, rgb(147, 86, 220) 8%, rgb(179, 97, 219) 30%, rgb(255, 121, 218) 100%);
   -webkit-background-clip: text;
           background-clip: text;
+}
+body .restaurants ul li figure figcaption .heart .bi-heart-fill {
+  opacity: 0.3;
+  transition: 0.6s;
+}
+body .restaurants ul li figure figcaption .heart .bi-heart-fill:hover {
+  opacity: 1;
 }
 body .restaurants ul li figure .entitled h2 {
   font-size: 1.2rem;
