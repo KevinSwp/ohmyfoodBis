@@ -1,6 +1,16 @@
 body {
-  margin: 0px;
+  margin: 0;
   font-family: "Roboto", sans-serif;
+}
+body li {
+  list-style-type: none;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body p {
+  color: black;
 }
 body header {
   padding: 1.5rem;
@@ -29,16 +39,24 @@ body nav form input {
   padding-left: 10px;
 }
 body nav .exploreRestaurants {
-  background-color: rgba(237, 235, 235, 0.3333333333);
+  background-color: rgba(235, 235, 235, 0.2901960784);
   padding: 20px;
 }
 body nav .exploreRestaurants button {
   background: linear-gradient(354deg, rgb(147, 86, 220) 8%, rgb(179, 97, 219) 30%, rgb(255, 121, 218) 100%);
-  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
-  color: white;
-  padding: 15px 20px;
   border: none;
   border-radius: 50px;
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  margin-top: 10px;
+  transition-duration: 0.3s;
+}
+body nav .exploreRestaurants button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.576);
 }
 body .proceeding {
   padding: 2rem 1rem;
@@ -68,9 +86,48 @@ body .proceeding ol li .number {
   margin-left: -35px;
 }
 body .proceeding ol li .fa-solid {
+  color: gray;
   padding-top: 15px;
   padding-right: 13px;
 }
 body .proceeding ol li .fa-store {
   color: #9356dc;
+}
+body .restaurants {
+  background-color: rgba(235, 235, 235, 0.6784313725);
+  padding: 1rem;
+}
+body .restaurants ul {
+  padding-left: 0;
+}
+body .restaurants ul li figure {
+  border-radius: 1rem;
+  background-color: white;
+}
+body .restaurants ul li figure img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+body .restaurants ul li figure figcaption {
+  display: flex;
+  padding: 0 1rem;
+}
+body .restaurants ul li figure .entitled h2 {
+  font-size: 1.2rem;
+  margin-bottom: -10px;
+}
+body .restaurants ul li figure .entitled p {
+  font-size: 1.1rem;
+}
+body .restaurants ul li figure .label {
+  position: absolute;
+  border-radius: 0.15rem;
+  padding: 0.4rem 0.7rem;
+  margin-top: -190px;
+  background-color: #99e2d0;
+  color: #368e6c;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
