@@ -60,11 +60,11 @@ body p {
   color: black;
 }
 body header {
+  display: flex;
   padding: 1.5rem;
-  padding-bottom: 0.5rem;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  position: relative;
+  padding-bottom: 0.6rem;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 body header img {
   width: 200px;
