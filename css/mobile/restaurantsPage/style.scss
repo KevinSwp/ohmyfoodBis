@@ -1,4 +1,7 @@
+// @import '../homePage/style.scss';
+// @use "../homePage/style.scss";
 $background : linear-gradient(354deg, rgba(147,86,220,1) 8%, rgba(179,97,219,1) 30%, rgba(255,121,218,1) 100%);
+$background-color: #99E2D0;
 
 header {
     i {
@@ -59,39 +62,95 @@ main {
             }
         }
 
-        .starter {
-            h2 {
-                font-weight: lighter;
-                font-size: large;
-                border-bottom: solid 4px #99E2D0;
-                padding-bottom: 0.3rem;
-                width: 3rem;
-            }
+        h2 {
+            font-weight: lighter;
+            font-size: large;
+            border-bottom: solid 4px #99E2D0;
+            padding-bottom: 0.3rem;
+            width: 3rem;
+        }
 
-            ul {
-                padding: 0;
+        ul {
+            padding: 0;
 
-                li {
-                    display: flex;
-                    box-shadow: 0rem 0rem 1rem rgb(0 0 0 / 10%);
-                    border-radius: 1rem;
-                    justify-content: space-between;
-                    padding: 1rem 1.5rem 1rem 1rem;
+            li {
+                display: flex;
+                max-height: 3.2rem;
+                box-shadow: 0rem 0rem 1rem rgb(0 0 0 / 10%);
+                border-radius: 1rem;
+                justify-content: space-between;
+                padding: 1rem 1.5rem 1rem 1rem;
+                overflow: hidden;
 
-                    .menu {
-                        h3 {
-                            margin: 0 0 5px 0;
-                        }
-
-                        p {
-                            margin: 0;
-                        }
+                .menu {
+                    h3 {
+                        margin: 0 0 5px 0;
                     }
 
-                    .price {
+                    p {
                         margin: 0;
-                        margin-top: 1.5rem;
                     }
+                }
+
+                .price {
+                    margin: 0;
+                    margin-top: 1.5rem;
+                }
+
+                .checkBloc {
+                    background-color: #99E2D0;
+                    width: 4rem;
+                    margin: -1rem -5rem -1rem 0rem;
+                    padding: 2rem 0;
+                    text-align: center;
+                    transition-duration: 0.7s;
+
+                    &:hover {
+                        margin-right: -1.5rem;
+                    }
+
+                    .check {
+                        background-color: transparent;
+                        margin-left: 1rem;
+                        margin-right: 1.5rem;
+                        width: 2rem;
+                        font-size: x-large;
+                        transform: rotate(-180deg);
+                        transition-duration: 0.7s;
+
+                        &:hover {
+                            transform: rotate(0);
+                        }
+
+                        i{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .confirm {
+            text-align: center;
+            padding: 2rem 0 4rem 0rem;
+
+           /* button {
+                @extend button;
+            }*/
+
+            button { 
+                background: $background;
+                border: none;
+                color: white;
+                box-shadow: 0.20rem 0.20rem 1rem rgb(0 0 0 / 30%);
+                padding: 1rem 3rem;
+                font-size: 1rem;
+                border-radius: 100px;
+                transition-duration: 0.30s;
+
+                &:hover {
+                    filter: brightness(1.10);
+                    box-shadow: 0.20rem 0.20rem 1rem rgba(0, 0, 0, 0.576);
                 }
             }
         }
