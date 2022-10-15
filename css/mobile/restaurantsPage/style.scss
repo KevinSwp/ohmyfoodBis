@@ -1,8 +1,99 @@
+$background : linear-gradient(354deg, rgba(147,86,220,1) 8%, rgba(179,97,219,1) 30%, rgba(255,121,218,1) 100%);
+
 header {
     i {
         position: absolute;
         top: 2rem;
         left: 1.5rem;
         font-size: 1.3rem;
+    }
+}
+
+.picture {
+    width: 100%;
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+main {
+    position: relative;
+    margin-top: -5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    background-color: white;
+
+    section {
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 0.5rem;
+
+            h1 {
+                font-family: 'Shrikhand';
+            }
+
+            .heart {
+                font-size: 1.5rem;
+                //switch heart on hover
+                &:hover .bi-heart,
+                .bi-heart-fill{
+                    display: none;
+                }
+                &:hover .bi-heart-fill{
+                    display: inline;
+                    color: transparent;
+                    background: $background;
+                    background-clip: text;
+                }
+
+                .bi-heart-fill{
+                    opacity: 0.3;
+                    transition: 0.6s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .starter {
+            h2 {
+                font-weight: lighter;
+                font-size: large;
+                border-bottom: solid 4px #99E2D0;
+                padding-bottom: 0.3rem;
+                width: 3rem;
+            }
+
+            ul {
+                padding: 0;
+
+                li {
+                    display: flex;
+                    box-shadow: 0rem 0rem 1rem rgb(0 0 0 / 10%);
+                    border-radius: 1rem;
+                    justify-content: space-between;
+                    padding: 1rem 1.5rem 1rem 1rem;
+
+                    .menu {
+                        h3 {
+                            margin: 0 0 5px 0;
+                        }
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+
+                    .price {
+                        margin: 0;
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+        }
     }
 }

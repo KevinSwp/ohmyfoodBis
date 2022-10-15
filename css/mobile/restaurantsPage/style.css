@@ -3,4 +3,77 @@ header i {
   top: 2rem;
   left: 1.5rem;
   font-size: 1.3rem;
+}
+
+.picture {
+  width: 100%;
+  max-width: 100%;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main {
+  position: relative;
+  margin-top: -5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 2.5rem 2.5rem 0 0;
+  background-color: white;
+}
+main section .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+main section .title h1 {
+  font-family: "Shrikhand";
+}
+main section .title .heart {
+  font-size: 1.5rem;
+}
+main section .title .heart:hover .bi-heart,
+main section .title .heart .bi-heart-fill {
+  display: none;
+}
+main section .title .heart:hover .bi-heart-fill {
+  display: inline;
+  color: transparent;
+  background: linear-gradient(354deg, rgb(147, 86, 220) 8%, rgb(179, 97, 219) 30%, rgb(255, 121, 218) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+main section .title .heart .bi-heart-fill {
+  opacity: 0.3;
+  transition: 0.6s;
+}
+main section .title .heart .bi-heart-fill:hover {
+  opacity: 1;
+}
+main section .starter h2 {
+  font-weight: lighter;
+  font-size: large;
+  border-bottom: solid 4px #99E2D0;
+  padding-bottom: 0.3rem;
+  width: 3rem;
+}
+main section .starter ul {
+  padding: 0;
+}
+main section .starter ul li {
+  display: flex;
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 1rem 1rem;
+}
+main section .starter ul li .menu h3 {
+  margin: 0 0 5px 0;
+}
+main section .starter ul li .menu p {
+  margin: 0;
+}
+main section .starter ul li .price {
+  margin: 0;
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
