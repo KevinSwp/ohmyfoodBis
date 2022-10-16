@@ -28,6 +28,9 @@ main section .title {
 }
 main section .title h1 {
   font-family: "Shrikhand";
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 main section .title .heart {
   font-size: 1.5rem;
@@ -62,15 +65,34 @@ main section ul {
 }
 main section ul li {
   display: flex;
-  max-height: 3.2rem;
+  max-height: 2.6rem;
   box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
-  justify-content: space-between;
   padding: 1rem 1.5rem 1rem 1rem;
+  margin-bottom: 1rem;
   overflow: hidden;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
+}
+@-webkit-keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 main section ul li .menu h3 {
   margin: 0 0 5px 0;
+  white-space: nowrap;
 }
 main section ul li .menu p {
   margin: 0;
@@ -78,12 +100,14 @@ main section ul li .menu p {
 main section ul li .price {
   margin: 0;
   margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: 1.5rem;
 }
 main section ul li .checkBloc {
   background-color: #99E2D0;
   width: 4rem;
   margin: -1rem -5rem -1rem 0rem;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   text-align: center;
   transition-duration: 0.7s;
 }
@@ -91,7 +115,6 @@ main section ul li .checkBloc:hover {
   margin-right: -1.5rem;
 }
 main section ul li .checkBloc .check {
-  background-color: transparent;
   margin-left: 1rem;
   margin-right: 1.5rem;
   width: 2rem;
@@ -108,7 +131,7 @@ main section ul li .checkBloc .check i {
 main section .confirm {
   text-align: center;
   padding: 2rem 0 4rem 0rem;
-  /* button {
+  /*button {
        @extend button;
    }*/
 }
