@@ -149,10 +149,6 @@ main {
             text-align: center;
             padding: 2rem 0 4rem 0rem;
 
-           /*button {
-                @extend button;
-            }*/
-
             button { 
                 background: $background;
                 border: none;
@@ -168,6 +164,10 @@ main {
                     box-shadow: 0.20rem 0.20rem 1rem rgba(0, 0, 0, 0.576);
                 }
             }
+
+           /*button {
+                @extend button;
+            }*/
         }
     }
 }
