@@ -1,0 +1,17 @@
+@media screen and (min-width: 992px) {
+    .proceeding {
+        ol {
+            li {  
+                br {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    .restaurants {
+        img {
+            height: 300px !important;
+        }
+    }
+}

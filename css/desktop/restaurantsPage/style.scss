@@ -1,0 +1,18 @@
+@media screen and (min-width: 992px) {
+    .menuCard {
+        display: flex;
+        justify-content: space-between;
+
+        .starter {
+            width: 30%;
+        }
+
+        .dish {
+            width: 30%;
+        }
+
+        .dessert {
+            width: 30%;
+        }
+    }
+}
