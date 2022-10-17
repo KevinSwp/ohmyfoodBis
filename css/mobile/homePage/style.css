@@ -87,7 +87,14 @@ body nav form input {
 }
 body nav .exploreRestaurants {
   background-color: rgba(235, 235, 235, 0.2901960784);
-  padding: 20px;
+  padding: 30px;
+  padding-bottom: 60px;
+}
+body nav .exploreRestaurants h1 {
+  margin-top: 0;
+}
+body nav .exploreRestaurants p {
+  font-size: 1.2rem;
 }
 body nav .exploreRestaurants button {
   background: linear-gradient(354deg, rgb(147, 86, 220) 8%, rgb(179, 97, 219) 30%, rgb(255, 121, 218) 100%);
@@ -108,9 +115,6 @@ body nav .exploreRestaurants button:hover {
 body .proceeding {
   padding: 2rem 1rem;
 }
-body .proceeding ol .step3 {
-  background-color: rgba(146, 86, 220, 0.1019607843);
-}
 body .proceeding ol li {
   display: flex;
   padding: 0.5rem;
@@ -119,6 +123,12 @@ body .proceeding ol li {
   margin-left: -30px;
   border-radius: 1.25rem;
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+body .proceeding ol li:hover {
+  background-color: rgba(146, 86, 220, 0.1019607843);
+}
+body .proceeding ol li:hover .fa-solid {
+  color: #9356dc;
 }
 body .proceeding ol li .number {
   background: #9356dc;
@@ -135,9 +145,6 @@ body .proceeding ol li .number {
 body .proceeding ol li .fa-solid {
   color: gray;
   padding: 1rem 1.3rem 0rem 0.5rem;
-}
-body .proceeding ol li .fa-store {
-  color: #9356dc;
 }
 body .restaurants {
   background-color: rgba(235, 235, 235, 0.6784313725);
@@ -188,7 +195,7 @@ body .restaurants ul li figure figcaption .heart .bi-heart-fill:hover {
 }
 body .restaurants ul li figure .entitled h2 {
   font-size: 1.2rem;
-  margin: 0.5rem 0 -0.5rem;
+  margin: 0.8rem 0 -0.8rem;
 }
 body .restaurants ul li figure .entitled p {
   font-size: 1.1rem;

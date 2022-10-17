@@ -82,7 +82,16 @@ body {
 
         .exploreRestaurants {
             background-color: #ebebeb4a;;
-            padding: 20px;
+            padding: 30px;
+            padding-bottom: 60px;
+
+            h1 {
+                margin-top: 0;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
 
             button {
                 background: $background;
@@ -109,9 +118,6 @@ body {
         padding: 2rem 1rem;
 
         ol {
-            .step3 {
-                background-color: #9256dc1a;
-            }
 
             li {
                 display: flex;
@@ -121,6 +127,14 @@ body {
                 margin-left: -30px;
                 border-radius: 1.25rem;
                 box-shadow: 0.20rem 0.20rem 0.5rem rgb(0 0 0 / 10%);
+
+                &:hover {
+                    background-color: #9256dc1a;
+                }
+
+                &:hover .fa-solid {
+                    color: #9356dc;
+                }
 
                 .number {
                     background: #9356dc;
@@ -138,10 +152,6 @@ body {
                 .fa-solid {
                     color: gray;
                     padding: 1rem 1.3rem 0rem 0.5rem;
-                }
-
-                .fa-store {
-                    color: #9356dc;
                 }
             }
         }
@@ -205,7 +215,7 @@ body {
                     .entitled {
                         h2 {
                             font-size: 1.2rem;
-                            margin: 0.5rem 0 -0.5rem;
+                            margin: 0.8rem 0 -0.8rem;
                         }
 
                         p{

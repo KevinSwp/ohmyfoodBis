@@ -31,6 +31,7 @@ main section .title h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: 1.9rem;
 }
 main section .title .heart {
   font-size: 1.5rem;
