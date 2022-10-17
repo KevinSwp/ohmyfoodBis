@@ -166,10 +166,10 @@ body {
         background-color: $background-color;
         padding: 1rem;
 
-        ul {
+        article {
             padding-left: 0;
 
-            li {
+            a {
 
                 figure {
                     position: relative;
@@ -225,6 +225,10 @@ body {
                         p{
                             font-size: 1.1rem;
                         }
+                    }
+
+                    .heart {
+                        width: 2rem;
                     }
 
                     .label {

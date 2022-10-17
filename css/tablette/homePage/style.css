@@ -9,14 +9,11 @@
   body .proceeding ol li br {
     display: inline;
   }
-  body .restaurants ul {
+  body .restaurants .bloc {
     display: flex;
     justify-content: space-between;
   }
-  body .restaurants ul div {
+  body .restaurants .bloc article {
     width: 49%;
-  }
-  body .restaurants ul div li .entitled {
-    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -153,57 +153,60 @@ body .restaurants {
   background-color: rgba(235, 235, 235, 0.6784313725);
   padding: 1rem;
 }
-body .restaurants ul {
+body .restaurants article {
   padding-left: 0;
 }
-body .restaurants ul li figure {
+body .restaurants article a figure {
   position: relative;
   border-radius: 1rem;
   background-color: white;
   margin: 1rem 0;
 }
-body .restaurants ul li figure img {
+body .restaurants article a figure img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
-body .restaurants ul li figure figcaption {
+body .restaurants article a figure figcaption {
   display: flex;
   padding: 0 1rem;
   align-items: center;
   justify-content: space-between;
 }
-body .restaurants ul li figure figcaption .heart {
+body .restaurants article a figure figcaption .heart {
   font-size: 1.5rem;
 }
-body .restaurants ul li figure figcaption .heart:hover .bi-heart,
-body .restaurants ul li figure figcaption .heart .bi-heart-fill {
+body .restaurants article a figure figcaption .heart:hover .bi-heart,
+body .restaurants article a figure figcaption .heart .bi-heart-fill {
   display: none;
 }
-body .restaurants ul li figure figcaption .heart:hover .bi-heart-fill {
+body .restaurants article a figure figcaption .heart:hover .bi-heart-fill {
   display: inline;
   color: transparent;
   background: linear-gradient(354deg, rgb(147, 86, 220) 8%, rgb(179, 97, 219) 30%, rgb(255, 121, 218) 100%);
   -webkit-background-clip: text;
           background-clip: text;
 }
-body .restaurants ul li figure figcaption .heart .bi-heart-fill {
+body .restaurants article a figure figcaption .heart .bi-heart-fill {
   opacity: 0.3;
   transition: 0.6s;
 }
-body .restaurants ul li figure figcaption .heart .bi-heart-fill:hover {
+body .restaurants article a figure figcaption .heart .bi-heart-fill:hover {
   opacity: 1;
 }
-body .restaurants ul li figure .entitled h2 {
+body .restaurants article a figure .entitled h2 {
   font-size: 1.2rem;
   margin: 0.8rem 0 -0.8rem;
 }
-body .restaurants ul li figure .entitled p {
+body .restaurants article a figure .entitled p {
   font-size: 1.1rem;
 }
-body .restaurants ul li figure .label {
+body .restaurants article a figure .heart {
+  width: 2rem;
+}
+body .restaurants article a figure .label {
   position: absolute;
   border-radius: 0.15rem;
   padding: 0.4rem 0.7rem;

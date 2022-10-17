@@ -16,18 +16,12 @@
        }
 
        .restaurants {
-            ul {
+            .bloc {
                 display: flex;
                 justify-content: space-between;
 
-                div {
+                article {
                     width: 49%;
-
-                    li {
-                        .entitled {
-                            width: 100%;
-                        }
-                    }
                 }
             }
        }
