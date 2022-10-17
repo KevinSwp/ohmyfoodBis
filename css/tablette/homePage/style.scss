@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+    body {
+       .proceeding {
+            ol {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    width: 25%;
+
+                    br {
+                        display: inline;
+                    }
+                }
+            }
+       }
+
+       .restaurants {
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                div {
+                    width: 49%;
+
+                    li {
+                        .entitled {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+       }
+    }
+}

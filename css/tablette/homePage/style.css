@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) {
+  body .proceeding ol {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .proceeding ol li {
+    width: 25%;
+  }
+  body .proceeding ol li br {
+    display: inline;
+  }
+  body .restaurants ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .restaurants ul div {
+    width: 49%;
+  }
+  body .restaurants ul div li .entitled {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

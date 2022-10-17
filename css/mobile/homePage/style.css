@@ -146,6 +146,9 @@ body .proceeding ol li .fa-solid {
   color: gray;
   padding: 1rem 1.3rem 0rem 0.5rem;
 }
+body .proceeding ol li br {
+  display: none;
+}
 body .restaurants {
   background-color: rgba(235, 235, 235, 0.6784313725);
   padding: 1rem;
