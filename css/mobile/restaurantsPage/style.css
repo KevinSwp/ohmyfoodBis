@@ -65,7 +65,6 @@ main section ul {
 }
 main section ul li {
   display: flex;
-  max-height: 2.6rem;
   box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   padding: 1rem 1.5rem 1rem 1rem;
@@ -90,12 +89,20 @@ main section ul li {
     transform: scale(1);
   }
 }
+main section ul li .menu {
+  overflow: hidden;
+}
 main section ul li .menu h3 {
   margin: 0 0 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 main section ul li .menu p {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 main section ul li .price {
   margin: 0;
@@ -120,7 +127,7 @@ main section ul li .checkBloc .check {
   width: 2rem;
   font-size: x-large;
   transform: rotate(-180deg);
-  transition-duration: 0.7s;
+  transition-duration: 0.5s;
 }
 main section ul li .checkBloc .check:hover {
   transform: rotate(0);
@@ -131,9 +138,6 @@ main section ul li .checkBloc .check i {
 main section .confirm {
   text-align: center;
   padding: 2rem 0 4rem 0rem;
-  /*button {
-       @extend button;
-   }*/
 }
 main section .confirm button {
   background: linear-gradient(354deg, rgb(147, 86, 220) 8%, rgb(179, 97, 219) 30%, rgb(255, 121, 218) 100%);
