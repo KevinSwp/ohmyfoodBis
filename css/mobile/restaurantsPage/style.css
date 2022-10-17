@@ -71,8 +71,8 @@ main section ul li {
   padding: 1rem 1.5rem 1rem 1rem;
   margin-bottom: 1rem;
   overflow: hidden;
-  -webkit-animation: appear 1s;
-          animation: appear 1s;
+  -webkit-animation: appear 0.7s;
+          animation: appear 0.7s;
 }
 @-webkit-keyframes appear {
   0% {
