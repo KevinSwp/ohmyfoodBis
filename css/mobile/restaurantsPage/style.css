@@ -114,27 +114,27 @@ main section ul li .price {
 main section ul li .checkBloc {
   background-color: #99E2D0;
   width: 4rem;
-  margin: -1rem -5rem -1rem 0rem;
+  margin: -1rem -6rem -1rem 0rem;
   padding: 1.5rem 0;
   text-align: center;
-  transition-duration: 0.7s;
-}
-main section ul li .checkBloc:hover {
-  margin-right: -1.5rem;
+  transition-duration: 0.5s;
 }
 main section ul li .checkBloc .check {
   margin-left: 1rem;
   margin-right: 1.5rem;
   width: 2rem;
   font-size: x-large;
-  transform: rotate(-180deg);
+  transform: rotate(-360deg);
   transition-duration: 0.5s;
-}
-main section ul li .checkBloc .check:hover {
-  transform: rotate(0);
 }
 main section ul li .checkBloc .check i {
   color: white;
+}
+main section ul li:hover .checkBloc {
+  margin-right: -1.5rem;
+}
+main section ul li:hover .checkBloc .check {
+  transform: rotate(0);
 }
 main section .confirm {
   text-align: center;

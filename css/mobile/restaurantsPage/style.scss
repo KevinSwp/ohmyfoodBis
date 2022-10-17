@@ -121,31 +121,31 @@ main {
                 .checkBloc {
                     background-color: #99E2D0;
                     width: 4rem;
-                    margin: -1rem -5rem -1rem 0rem;
+                    margin: -1rem -6rem -1rem 0rem;
                     padding: 1.5rem 0;
                     text-align: center;
-                    transition-duration: 0.7s;
-
-                    &:hover {
-                        margin-right: -1.5rem;
-                    }
+                    transition-duration: 0.5s;
 
                     .check {
                         margin-left: 1rem;
                         margin-right: 1.5rem;
                         width: 2rem;
                         font-size: x-large;
-                        transform: rotate(-180deg);
+                        transform: rotate(-360deg);
                         transition-duration: 0.5s;
-
-                        &:hover {
-                            transform: rotate(0);
-                        }
 
                         i{
                             color: white;
                         }
                     }
+                }
+
+                &:hover .checkBloc {
+                    margin-right: -1.5rem;
+                }
+
+                &:hover .checkBloc .check {
+                    transform: rotate(0);
                 }
             }
         }
