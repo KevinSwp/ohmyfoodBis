@@ -124,6 +124,7 @@ body .proceeding ol li {
   margin-left: -30px;
   border-radius: 1.25rem;
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  font-weight: bold;
 }
 body .proceeding ol li:hover {
   background-color: rgba(146, 86, 220, 0.1019607843);
